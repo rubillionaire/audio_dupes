@@ -109,7 +109,7 @@ def flag(audio_dict, delete_flag):
 
 def set_flag(song, delete_flag):
     """
-    called in order to set the delete flag on a song.
+    Called in order to set the delete flag on a song.
     gets both the song element from the audio_dict
     and the delete_flag
     """
