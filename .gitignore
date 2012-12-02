@@ -34,4 +34,4 @@ nosetests.xml
 .project
 .pydevproject
 
-flag_dupes.log
+*.log
