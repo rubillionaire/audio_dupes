@@ -110,11 +110,12 @@ class MoveDupes:
         Called in order to move a song to the dupe
         dir.
         """
-        move_to = "{0}{1}/{2}/".format(self.dupe_dir, 
-                                            artist, album)
-        if not os.path.exists(move_to):
-            os.makedirs(move_to)
         try:
+            move_to = "{0}{1}/{2}/".format(self.dupe_dir, 
+                                                artist, album)
+            if not os.path.exists(move_to):
+                os.makedirs(move_to)
+                
             shutil.move(song['path'], move_to)
             self.moved.append(song)
             return 1
