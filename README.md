@@ -1,9 +1,7 @@
 Move duplicate audio
 ====================
 
-Moves duplicate MP3 and M4A files to another directory.
-
-Note: This repo was originally setup to flag audio files with a bit of metadata. But iTunes choked on the library, so the approach has shifted to moving the files. Once moved, one can [manually clean up itunes][0]
+Script looks through directory of music, and moves duplicate MP3 and M4A files to another directory of your choosing. The audio file with the higher bitrate stays, the lower bitrate file is moved to the duplicate directory.
 
 ### Setup.
 
